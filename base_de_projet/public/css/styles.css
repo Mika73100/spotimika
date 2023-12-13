@@ -1,0 +1,23 @@
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* 100% de la hauteur de la vue */
+}
+
+body {
+    background-color: rgba(128, 128, 128, 0.597);
+}
+
+
+@media (max-width: 768px) {
+    /* Styles pour les écrans plus petits */
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+    /* Styles pour les écrans de taille moyenne */
+}
+
+@media (min-width: 1201px) {
+    /* Styles pour les grands écrans */
+}

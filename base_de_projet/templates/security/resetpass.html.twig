@@ -1,0 +1,23 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}lostpass !
+{% endblock %}
+
+{% block body %}
+	<form method="post">
+		<div class="center-container">
+			<h1>
+				Reset password
+			</h1>
+			{# ici je débute le formulaire #}
+			{{ form_start(PasswordFormType)}}
+			{# ici je demande a mettre le champs input avant le button #}
+			{{ form_row(PasswordFormType.password)}}
+			<button type="submit" class="">Envoyer</button>
+			{{ form_end(PasswordFormType)}}
+			{# ici je termine le formulaire #}
+			<a href="{{ path('app_login') }}">Login</a>
+		</div>
+
+	</form>
+{% endblock %}
